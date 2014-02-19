@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Head First Lounge Elixirs</title>
+</head>
+<body>
+<h1> Our Elixirs</h1>
+<h2>green tea cooler</h2>
+<img src="green.jpg">
+<p>chock full of vitamins and minerals...</p>
+<h2>raspberru ice concentration</h2>
+<img src="lightblue.jpg">
+<p>conbing raspberry juice with...</p>
+<h2>blueberry</h2>
+<img src="blue.jpg">
+<p>chock full of vitamins and minerals...</p>
+<h2>cranberry</h2>
+<img src="red.jpg">
+<p>chock full of vitamins and minerals...</p>
+</body>
+</html>
