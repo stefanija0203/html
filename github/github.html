@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Your Profile</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+	<link rel="stylesheet" href="bootstrap-custom.css" />
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="header header-logged-in true">
+			<div class="container clearfix">
+				<a href="https://github.com" class="header-logo-invertocat"> <img src="img/git.ico" alt="" width="25" height="25"></a>
+				<a href="https://github.com/notification" class="notification-indicator tooltipped downwards" data-gotokey="n" original-title="You have no unread notification"> <span class="mail-status all-read"></span></a>
+				<div class="command-bar js-command-bar">
+					<form action="/search" class="command-bar-form" id="top_search_form" method="get">
+						<div class="input-append">
+							<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" tabindex="1" autocapitalize="off" data-username="stefanija0203" placeholder="Search or type a command">
+							<span class="add-on" data-toggle="tooltip" data-placement="bottom" title="Show command bar help"> <i class="icon-question-sign icon-white"></i></span>
+						</div>
+					</form>
+					<ul class="top-nav">
+						<li class="explore"><a href="https://github.com/explore">Explore </a></li>
+						<li><a href="https://gist/github.com">Gist </a></li>
+						<li><a href="https://github.com/blog">Blog </a></li>
+						<li><a href="https://help.github.com">Help</a></li>
+					</ul>
+				</div>
+				<ul id="user-links">
+					<li>
+						<a href="https://github.com/stefanija0203" class="name"> <img src="https://0.gravatar.com/avatar/d61fe1372be30bb3fbbec59d4b3f93dd?d=https%3A%2F%2Fidenticons.github.com%2F1de3de164204a89c165eb08488ac7033.png&amp;r=x&amp;s=140" alt="stefanija0203" width="20" height="20">stefanija0203</a>
+					</li>
+					<li class="new-menu dropdown-toggle js-menu-container active c-h1">
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+								<span class="icon-plus"></span>
+								<span class="dropdown-arrow"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="https://github.com/new">
+										<span class="icon-edit"></span> New repository
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/organization/new">
+										<span class="icon-user"></span> New organization
+									</a>
+								</li>
+							</ul>
+						
+						</div>
+					</li>
+					<li class="c-h">
+						<a href="https://github.com/settings/profile" id="account_settings" data-toggle="tooltip" data-placement="bottom" title="Account settings">
+							<span class="icon-wrench"></span>
+						</a>
+					</li>
+					<li class="c-h">
+						<a href="https://github.com/logout" data-toggle="tooltip popover" data-placement="bottom" title="Sign out" >
+							<span class="icon-off"></span>
+						</a>
+					</li>
+				</ul>
+				<div class="js-new-dropdown-contents hidden">
+					<ul class="dropdown-menu">
+						<li>
+							<a href="https://github.com/new">
+								<span class="octicon octicon-repo-create"></span>New repository
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/organizations/new">
+								<span class="octicon octicon-organization"></span>New organization
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="site clearfix">
+			<div class="context-loader-container" id="site-container" data-pjax-container>
+				<div class="container">
+					<div class="settings-nav menu-container js-settings-next">
+						<ul class="menu accordion js-settins-pjax" data-pjax>
+							<li class="section">
+								<a href="https://github.com/settings/profile" class="section-head">
+									<img alt="stefanija0203" height="20" src="https://0.gravatar.com/avatar/d61fe1372be30bb3fbbec59d4b3f93dd?d=https%3A%2F%2Fidenticons.github.com%2F1de3de164204a89c165eb08488ac7033.png&amp;r=x&amp;s=140" width="20">stefanija0203
+								</a>
+								<ul class="expanded section-nav">
+									<li>
+										<a href="https://github.com/settings/profile" class="js-selected-navigation-item selected" data-selected-links="https://github.com/settings/profile">Profile</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/admin" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/admin">Account Settings</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/emails" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/emails">Emails</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/notifications" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/notifications">Notification Center</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/billing" class="js-selected-navigation-item" data-selected-links="user_billing_settings https://github.com/settings/billing">Billing</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/payments" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/payments">Payment History</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/ssh" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/ssh">SSH Keys</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/security" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/security">Security History</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/applications" class="js-selected-navigation-item" data-selected-links="applications_settings https://github.com/settings/applications">Applications</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/repositories" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/repositories">Repositories</a>
+									</li>
+									<li>
+										<a href="https://github.com/settings/organizations" class="js-selected-navigation-item" data-selected-links="https://github.com/settings/organizations">Organizations</a>
+									</li>
+									<li class="usage-bar">
+										<dl>
+											<dt>
+												Private Repos <strong>0 of 0</strong>
+											</dt>
+											<dd>
+												<span style="width: 100%" class="danger"></span>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="settings-content">
+						<div class="context-loader large-format-loader">
+							<p>
+								<img alt="Octocat-spinner-128" height="64" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-128.gif" width="64">
+							</p>
+							<p>Loading...</p>
+						</div>
+						<div class="boxed-group">
+							<h3>Public Profile</h3>
+							<div class="boxed-group-inner clearfix">
+								<form action="https://github.com/users/stefanija0203" accept-charset="UTF-8" class="edit_user" id="edit_user_6407306" method="post">
+									<div style="margin: 0; padding: 0; display: inline">
+										<input type="hidden" name="_method" value="put" />
+										<input name="authenticity_token" type="hidden" value="njXYruDfYK8xAN0u16+fepcyHLfH36gf86QnIQBsOuY=">
+									</div>
+									<div class="form-left">
+										<dl class="form">
+											<dt>
+												<div class="fieldWithErrors">
+													<label for="user_profile_name">Name</label>
+												</div>
+											</dt>
+											<dd>
+												<div class="fieldWithErrors">
+													<input type="text" id="user_profile_name" name="user[profile_name]" size="30">
+												</div>
+											</dd>
+										</dl>
+										<dl class="form">
+											<dt>
+												<div class="fieldWithErrors">
+													<label for="user_prodfile_mail">Email (will be public)</label>
+												</div>
+
+											</dt>
+											<dd>
+												<div class="fieldWithErrors">
+													<input type="text" id="user_profile_email" name="user[profile_email]" size="30">
+												</div>
+											</dd>
+										</dl>
+										<dl class="form">
+											<dt>
+												<div class="fieldWithErrors">
+													<label for="user_profile_blog">URL</label>
+												</div>
+											</dt>
+											<dd>
+												<div class="fieldWithErrors">
+													<input type="text" id="user_profile_blog" name="user[profile_blog]" size="30">
+												</div>
+											</dd>
+										</dl>
+										<dl class="form">
+											<dt>
+												<div class="fieldWithErrors">
+													<label for="user_profile_company">Company</label>
+												</div>
+											</dt>
+											<dd>
+												<div class="fieldWithErrors">
+													<input type="text" id="user_profile_company" name="user[profile_company]" size="30">
+												</div>
+											</dd>
+										</dl>
+										<dl class="form">
+											<dt>
+												<div class="fieldWithErrors">
+													<label for="user_profile_location">Location</label>
+												</div>
+											</dt>
+											<dd>
+												<div class="fieldWithErrors">
+													<input type="text" id="user_profile_location" name="user[profile_location]" size="30">
+												</div>
+											</dd>
+										</dl>
+										<dl class="form">
+											<dt>
+												<div class="fieldWithErrors">
+													<label for="user_gravatar_email">
+														Gravatar Email <small>(Private)</small>
+													</label>
+												</div>
+											</dt>
+											<dd>
+												<div class="fieldWithErrors">
+													<input type="text" id="user_gravatar_email" size="30" value="stefanijakicovic@gmail.com">
+												</div>
+											</dd>
+										</dl>
+										<div class="profile-photo clearfix">
+											<img alt="stefanija0203" height="30" src="https://0.gravatar.com/avatar/d61fe1372be30bb3fbbec59d4b3f93dd?d=https%3A%2F%2Fidenticons.github.com%2F1de3de164204a89c165eb08488ac7033.png&amp;r=x&amp;s=140" width="30">
+											<p><strong><a href="https://gravatar.com">Change your gravatar at Gravatar.com</a></strong>.</p>
+										</div>
+									</div>
+									<div class="profile-preview">
+										<label for="">Profile Preview</label>
+										<img alt="stefanija0203" class="avatar js-avatar" data-user="6407306" height="220" src="https://1.gravatar.com/avatar/d61fe1372be30bb3fbbec59d4b3f93dd?d=https%3A%2F%2Fidenticons.github.com%2F1de3de164204a89c165eb08488ac7033.png&amp;r=x&amp;s=140" width="220">
+										<h1 class="vcard-names">
+											<span class="vcard-fullname" itemprop="name"></span>
+											<span class="vcard-username" itemprop="additionalName">stefanija0203</span>
+										</h1>
+										<ul class="vcard-details">
+											<li class="vcard-detail">
+												<span class="icon-time"></span>
+												<span class="join-label">Joined on </span>
+												<span class="join-date">Jan 14, 2014</span>
+											</li>
+										</ul>
+									</div>
+									<p class="form-footer">
+										<button class="button primary btn-large" type="submit">Update Profile</button>
+									</p>
+								</form>
+							</div>
+						</div>
+						<div class="boxed-group clearfix">
+							<h3>Jobs Profile</h3>
+							<div class="boxed-group-inner">
+								<form action="https://github.com/users/stefanija0203" class="edit_user" accept-charset="UTF-8" id="edit_user_6407306" method="post">
+									<div style="margin: 0; padding: 0; display: inline">
+										<input type="hidden" name="_method" value="put" />
+										<input name="authenticity_token" type="hidden" value="njXYruDfYK8xAN0u16+fepcyHLfH36gf86QnIQBsOuY=" />
+									</div>
+									<div class="fields">
+									<p></p>
+										<label for="">
+											<input type="checkbox"> Available for hire
+										</label>
+									</div>
+									<p>
+										<span class="success" style="display: none">
+											<i class="octicon octicon-check"></i>Saved
+										</span>
+										<button class="button primary btn-large" tabindex="4">Save Jobs Profile</button>
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="modal-backdrop"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="site-footer">
+			<ul class="site-footer-links right">
+				<li>
+					<a href="https://status.github.com">Status</a>
+				</li>
+				<li>
+					<a href="http://developer.github.com">API</a>
+				</li>
+				<li>
+					<a href="https://training.github.com">Training</a>
+				</li>
+				<li>
+					<a href="https://shop.github.com">Shop</a>
+				</li>
+				<li>
+					<a href="https://github.com/blog">Blog</a>
+				</li>
+				<li>
+					<a href="https://github.com/about">About</a>
+				</li>
+			</ul>
+			<a href="/">
+				<img src="img/git.jpg" alt="">
+			</a>
+			<ul class="site-footer-links">
+				<li>&copy; 2014 <span title="0.01856s from github-fe122-cp1-prd-iad-github.net">GitHub</span>, Inc.</li>
+				<li><a href="https://github.com/site/terms">Terms</a></li>
+				<li><a href="https://github.com/site/privacy">Privacy</a></li>
+				<li><a href="https://github.com/security">Security</a></li>
+				<li><a href="https://github.com/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	$("#pop").popover();
+	
+</script>
+
+	
+</body>
+</html>
